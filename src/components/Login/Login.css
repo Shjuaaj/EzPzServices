@@ -1,0 +1,107 @@
+.cross-icon {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: transparent;
+}
+
+.cross-icon:hover {
+    transform: scale(1.05);
+}
+
+.login {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-popup {
+    width: 80%;
+    max-width: 330px;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    border: 2px solid black;
+}
+
+.login-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+}
+
+.login h2,
+input,
+button,
+p,
+span {
+    background-color: transparent;
+}
+
+.login-popup-condition {
+    background-color: transparent;
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-popup-condition input {
+    background-color: transparent;
+    margin-top: 3px;
+}
+
+.login-popup-input {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-popup-input input {
+    outline: none;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-popup button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0c14b;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.login-popup button:hover {
+    background-color: #ddb347;
+}
+
+.login p span {
+    color: #1aa383;
+    font-weight: 500;
+    cursor: pointer;
+    transition: text-decoration 0.2s, transform 0.2s;
+}
+
+.login p span:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}

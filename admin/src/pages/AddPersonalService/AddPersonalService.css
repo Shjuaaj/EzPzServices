@@ -1,0 +1,94 @@
+.add-personal-service {
+    width: 70%;
+    margin-left: max(4.5vw, 20px);
+    margin-top: 50px;
+    color: black;
+    font-size: 18px;
+}
+
+.add-personal-service-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+    animation: fadeIn 2s;
+}
+
+.add-personal-service-checkbox input {
+    margin-right: 3px;
+}
+
+.add-personal-service-label {
+    font-size: 28px;
+    margin-bottom: 18px;
+    color: #004d40;
+}
+
+.add-personal-service-add-button {
+    padding: 12px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #004d40;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: 20%;
+    height: 50px;
+    margin-bottom: 120px;
+    margin-top: 38px;
+}
+
+.add-personal-service-add-button:hover {
+    background-color: #002520;
+}
+
+@media (max-width: 900px) {
+    .add-personal-service {
+        width: 85%;
+        margin-left: 20px;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    .add-personal-service-checkboxes {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        row-gap: 40px;
+    }
+
+    .add-personal-service-label {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .add-personal-service-add-button {
+        width: 40%;
+        height: 45px;
+    }
+}
+
+@media (max-width: 600px) {
+    .add-personal-service {
+        width: 95%;
+        margin-left: 20px;
+        margin-right: auto;
+        font-size: 14px;
+    }
+
+    .add-personal-service-checkboxes {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+        row-gap: 30px;
+    }
+
+    .add-personal-service-label {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .add-personal-service-add-button {
+        width: 60%;
+        height: 40px;
+    }
+}

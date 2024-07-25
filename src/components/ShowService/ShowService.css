@@ -1,0 +1,190 @@
+.show-service-cross-icon {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: transparent;
+}
+
+.show-service-cross-icon:hover {
+    transform: scale(1.05);
+}
+
+.show-service div {
+    background-color: transparent;
+}
+
+.show-service {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: grid;
+}
+
+.show-service-popup {
+    place-self: center;
+    width: 500px;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    position: fixed;
+    border: 2px solid black;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.show-service-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: transparent;
+}
+
+.show-service h2 {
+    font-size: 30px;
+}
+
+.show-service-image {
+    width: 440px;
+    max-height: 300px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.show-service h2,
+input,
+button,
+p {
+    background-color: transparent;
+}
+
+.show-service-description textarea {
+    width: 440px;
+    height: 100px;
+    background-color: transparent;
+    padding: 6px;
+    border-radius: 2px;
+    border: 1.5px solid black;
+}
+
+.show-service-date {
+    background-color: transparent;
+}
+
+.show-service-date label {
+    font-weight: 500;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.show-service-time {
+    background-color: transparent;
+}
+
+.show-service-time label {
+    font-weight: 500;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.show-service-date,
+.show-service-time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.show-service-date-and-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.show-service-cost {
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.show-service button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0c14b;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.show-service button:hover {
+    background-color: #ddb347;
+}
+
+.show-service button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #999;
+}
+
+.show-service-date input,
+.show-service-time input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.show-service-date input[type="date"],
+.show-service-time input[type="time"] {
+    appearance: none;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .show-service-popup {
+        width: 70%;
+    }
+
+    .show-service-date input[type="date"],
+    .show-service-time input[type="time"] {
+        width: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .show-service-popup {
+        width: 90%;
+        padding: 20px;
+        max-width: 500px;
+    }
+
+    .show-service-time {
+        margin-right: 20px;
+    }
+
+    .show-service-date input[type="date"],
+    .show-service-time input[type="time"] {
+        width: 70px;
+    }
+
+    .show-service-description textarea::placeholder {
+        font-size: 16px;
+    }
+}

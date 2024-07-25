@@ -1,0 +1,76 @@
+.show-hero {
+    position: absolute;
+    z-index: 10;
+    background-color: transparent;
+
+    place-self: center;
+
+    color: black;
+    background-color: white;
+
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    position: fixed;
+    border: 2px solid black;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+}
+
+.show-hero-cross-icon {
+    margin-left: 90%;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background-color: transparent;
+}
+
+.show-hero-cross-icon:hover {
+    transform: scale(1.05);
+}
+
+.show-hero-image {
+    border-radius: 50%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: -50px;
+    border: 1px solid grey;
+}
+
+.show-hero-details {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.show-hero-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-size: 40px;
+    margin-top: -10px;
+    color: #004d40;
+}
+
+.show-hero-specialization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-size: 1.3vw;
+    margin-top: 18px;
+    text-align: center;
+}

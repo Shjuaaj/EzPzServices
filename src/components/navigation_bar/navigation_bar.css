@@ -1,0 +1,248 @@
+.navigation-bar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.logo {
+    border-radius: 15px;
+    border: 6px solid #004d40;
+    width: 130px;
+    height: 90px;
+    background-color: #323232;
+
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.search-icon {
+    width: 30px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+.navigation-bar-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.navigation-bar-menu li {
+    cursor: pointer;
+    transition: transform 0.3s, font-size 0.3s;
+    display: inline-block;
+}
+
+.navigation-bar-menu li:hover {
+    transform: scale(1.1);
+    font-size: 18px;
+}
+
+.navigation-bar-menu a {
+    cursor: pointer;
+    transition: transform 0.2s, font-size 0.2s;
+    display: inline-block;
+}
+
+.navigation-bar-menu a:hover {
+    transform: scale(1.1);
+    font-size: 18px;
+}
+
+.navigation-bar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation-bar-sign-in-button {
+    background: transparent;
+    font-size: 16px;
+    color: black;
+    border: 2px solid #004d40;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+}
+
+.navigation-bar-sign-in-button:hover {
+    background: #004d40;
+    color: #ffffff;
+    transform: scale(1.07);
+}
+
+.active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #004d40;
+}
+
+.cart {
+    width: 34px;
+    cursor: pointer;
+}
+
+.navigation-bar-cart-icon {
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.navigation-bar-cart-icon:hover {
+    transform: scale(1.2);
+}
+
+.dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: #00796B;
+    border-radius: 6px;
+    top: -8px;
+    right: -8px;
+}
+
+.navigation-bar-profile-icon {
+    width: 40px;
+    cursor: pointer;
+}
+
+.navigation-bar-profile {
+    position: relative;
+}
+
+.navigation-bar-profile:hover .navigation-bar-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 2px solid #004d40;
+    list-style: none;
+}
+
+.navigation-bar-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 10;
+
+    animation: fadeIn 0.5s;
+}
+
+.navigation-bar-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.navigation-bar-profile-dropdown li:hover {
+    color: #004d40;
+    transform: scale(1.05);
+}
+
+.navigation-bar-profile-dropdown img {
+    width: 20px;
+}
+
+.navigation-bar-profile-dropdown hr {
+    border-color: white;
+}
+
+@media (max-width: 1050px) {
+    .navigation-bar .logo {
+        width: 140px;
+    }
+
+    .navigation-bar-right img {
+        width: 38px;
+    }
+
+    .navigation-bar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navigation-bar-right button {
+        padding: 8px 25px;
+    }
+
+    .navigation-bar-profile-icon {
+        width: 45px;
+    }
+
+    .navigation-bar-right img {
+        width: 38px;
+    }
+
+    .cart {
+        width: 40px;
+    }
+
+    .navigation-bar-right {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navigation-bar .logo {
+        width: 1w0px;
+    }
+
+    .navigation-bar-right img {
+        width: 38px;
+    }
+
+    .navigation-bar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navigation-bar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+
+    .navigation-bar-right img {
+        width: 38px;
+    }
+
+    .cart {
+        width: 40px;
+    }
+
+    .navigation-bar-right {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 779px) {
+    .navigation-bar-menu {
+        display: none;
+    }
+
+    .navigation-bar-right img {
+        width: 38px;
+    }
+
+    .cart {
+        width: 40px;
+    }
+
+    .navigation-bar-right {
+        gap: 30px;
+    }
+}

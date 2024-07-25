@@ -1,0 +1,140 @@
+.add-all-service {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: black;
+    font-size: 16px;
+}
+
+.add-all-service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-all-service-image,
+.add-all-service-image img {
+    width: 120px;
+}
+
+.add-all-service-image img {
+    border-radius: 5px;
+    border: 2px solid #004d40;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-all-service-image img:hover {
+    transform: scale(1.05);
+}
+
+.add-all-service-name,
+.add-all-service-name input {
+    width: max(40%, 280px);
+}
+
+.add-all-service-name input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #004d40;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-all-service-cost input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #004d40;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-all-service-cost,
+.add-all-service-cost input {
+    width: max(20%, 100px);
+}
+
+.add-all-service p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.add-all-service-add-button {
+    padding: 12px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: #004d40;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    width: 20%;
+    height: 50px;
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.add-all-service-add-button:hover {
+    background-color: #002520;
+}
+
+.add-all-service-toast-success {
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .add-all-service {
+        width: 90%;
+        margin-left: 20px;
+        margin-right: auto;
+        font-size: 14px;
+    }
+
+    .add-all-service-image,
+    .add-all-service-image img {
+        width: 100px;
+    }
+
+    .add-all-service-name,
+    .add-all-service-name input {
+        width: 100%;
+    }
+
+    .add-all-service-cost,
+    .add-all-service-cost input {
+        width: 50%;
+    }
+
+    .add-all-service-add-button {
+        width: 50%;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-all-service {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: auto;
+        font-size: 12px;
+    }
+
+    .add-all-service-image,
+    .add-all-service-image img {
+        width: 80px;
+    }
+
+    .add-all-service-name,
+    .add-all-service-name input {
+        width: 100%;
+    }
+
+    .add-all-service-cost,
+    .add-all-service-cost input {
+        width: 70%;
+    }
+
+    .add-all-service-add-button {
+        width: 70%;
+        height: 40px;
+    }
+}

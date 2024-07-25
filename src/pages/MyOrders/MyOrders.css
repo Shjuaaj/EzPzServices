@@ -1,0 +1,153 @@
+.my-orders {
+    margin: 50px 0px;
+    min-height: calc(40vh - 100px);
+}
+
+.my-orders-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.my-orders-order-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.my-orders-inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #f9f9f9;
+}
+
+.my-orders img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.my-orders h2 {
+    font-size: 40px;
+    color: #004d40;
+    margin-bottom: 40px;
+    margin-top: 65px;
+}
+
+.my-orders-order h3 {
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin: 0;
+}
+
+.my-orders-order p {
+    font-size: 1.8vh;
+    margin: 0;
+    color: #666;
+}
+
+.my-orders-cost {
+    font-size: 25px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+.my-orders-order {
+    margin-left: 30px;
+    background-color: #f9f9f9;
+}
+
+.my-orders-order h3 {
+    padding-bottom: 5px;
+    background-color: #f9f9f9;
+}
+
+.my-orders-order p {
+    padding-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .my-orders {
+        margin: 30px 0px;
+    }
+
+    .my-orders-container {
+        gap: 20px;
+    }
+
+    .my-orders-order-container {
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .my-orders img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .my-orders h2 {
+        font-size: 35px;
+    }
+
+    .my-orders-order h3 {
+        font-size: 2.2vh;
+    }
+
+    .my-orders-order p {
+        font-size: 1.5vh;
+    }
+
+    .my-orders-cost {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-orders {
+        margin: 20px 0px;
+    }
+
+    .my-orders-container {
+        gap: 10px;
+    }
+
+    .my-orders-order-container {
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: auto 1fr;
+    }
+
+    .my-orders img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .my-orders h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+
+    .my-orders-order h3 {
+        font-size: 2vh;
+    }
+
+    .my-orders-order p {
+        font-size: 1.2vh;
+    }
+
+    .my-orders-cost {
+        font-size: 18px;
+    }
+
+    .my-orders-inner {
+        grid-template-columns: 1fr;
+    }
+}

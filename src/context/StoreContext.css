@@ -1,0 +1,23 @@
+.added-to-cart-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #388E3C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+}
+
+.not-added-to-cart-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+}

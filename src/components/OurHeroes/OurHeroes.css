@@ -1,0 +1,105 @@
+.our-heroes {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.our-heroes h1 {
+    color: #004d40;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.our-heroes-text {
+    max-width: 60%;
+}
+
+.our-heroes-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.our-heroes-list-hero {
+    margin: 20px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.our-heroes-list-hero:hover {
+    transform: scale(1.06);
+}
+
+.our-heroes-list::-webkit-scrollbar {
+    display: none;
+}
+
+.our-heroes-list-hero img {
+    width: 8.4vw;
+    height: 8.4vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+    border: 1px solid grey;
+}
+
+.our-heroes-list-hero p {
+    margin-top: 10px;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+    color: black;
+}
+
+.our-heroes hr {
+    margin: 10px 0px;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+@media (max-width: 1024px) {
+    .our-heroes-list {
+        gap: 20px;
+    }
+
+    .our-heroes-list-hero img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .our-heroes-list-hero p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-heroes {
+        gap: 10px;
+    }
+
+    .our-heroes h1 {
+        font-size: 32px;
+    }
+
+    .our-heroes-text {
+        max-width: 80%;
+    }
+
+    .our-heroes-list {
+        gap: 10px;
+    }
+
+    .our-heroes-list-hero img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .our-heroes-list-hero p {
+        font-size: 16px;
+    }
+}
