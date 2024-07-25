@@ -5,15 +5,7 @@
        { "src": "*.js", "use": "@vercel/node" }
     ],
    
-    "routes": [
-       { "src": "/", "dest": "/" },
-       { "src": "/api/service", "dest": "/" },
-       { "src": "/images", "dest": "/" },
-       { "src": "/api/user", "dest": "/" },
-       { "src": "/api/cart", "dest": "/" },
-       { "src": "/api/order", "dest": "/" }
-
-    ]
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
   
     
  }
