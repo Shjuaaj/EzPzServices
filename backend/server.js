@@ -15,7 +15,7 @@ const app = express()
 // middleware
 app.use(express.json())
 app.use(cors({
-    origin: "https://66a363e563131c579fb814f1--kaleidoscopic-maamoul-0da161.netlify.app",
+    origin: "https://ezpzseriviics.netlify.app",
         credentials: true,
 }))
 
