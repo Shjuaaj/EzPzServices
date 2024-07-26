@@ -30,7 +30,7 @@ app.use("/api/cart", cartRouter)
 app.use("/api/order", orderRouter)
 
 app.get("/", (req, res) => {
-    res.send("Working")
+    res.send("Working chal rha h")
 })
 
 const port = process.env.PORT || 4000;
