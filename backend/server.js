@@ -15,7 +15,7 @@ const app = express()
 // middleware
 app.use(express.json())
 app.use(cors({
-    origin: "https://66a363e563131c579fb814f1--kaleidoscopic-maamoul-0da161.netlify.app/",
+    origin: "https://66a363e563131c579fb814f1--kaleidoscopic-maamoul-0da161.netlify.app",
         credentials: true,
 }))
 
@@ -30,7 +30,7 @@ app.use("/api/cart", cartRouter)
 app.use("/api/order", orderRouter)
 
 app.get("/", (req, res) => {
-    res.send("Working chal rha h")
+    res.send("Working chal rha h kya?")
 })
 
 const port = process.env.PORT || 4000;
